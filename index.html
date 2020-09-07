@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en"  class="disable-bounce" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="google" content="notranslate">
+  <title>iot_eskaitech_com</title>
+  <meta name="description" content="" />
+  <meta name="Author" content="" />
+  <meta name="Copyright" content="" />
+  <meta name="Keywords" content="" />
+  <meta name="Subject" content="" />
+  <meta property="og:url"  content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="" />
+  <meta name="theme-color" content="rgb(204,51,51)">
+  <meta name="apple-mobile-web-app-title" content="IoTSmartPower">
+
+  <link rel="icon" type="image/png" href="./img/apple-touch-icon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/apple-touch-icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/apple-touch-icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/apple-touch-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./img/apple-touch-icon-192x192.png">
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-TileColor" content="rgb(204,51,51)">
+  <meta name="msapplication-TileImage" content="./img/apple-touch-icon-144x144.png">
+  <meta name="msapplication-square70x70logo" content="./img/apple-touch-icon-70x70.png">
+  <meta name="msapplication-square150x150logo" content="./img/apple-touch-icon-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="./img/apple-touch-icon-150x150.png">
+  <link rel="apple-touch-icon"  href="./img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="16x16" href="./img/apple-touch-icon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+  <link id="mainfont" href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/thorium.min.css">
+  <link rel="stylesheet" href="css/pages/index.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <div class="apploader"></div>
+  <div id="app" class="custom">
+    <div class="panel-backdrop">
+    </div>
+    <div id="panel-left" class="panel panel-left panel-init panel-cover" data-swipe="true">    
+      <div id="left-panel-page-o-742gumq616gumqikbx" class="page">        
+        <div id="left-panel-page-content" class="page-content">
+          <div id="obj-pbgswh897" class="block custom-block">
+            <h1 id="obj-mmqwtt831" class="h1">Serial Number<br>
+            </h1>
+          </div>
+          <div id="obj-glephs604" class="block custom-block">
+            <p id="obj-bkpwcc599" class="lead text-danger">Connect to Your Device With Serial Number<br>
+            </p>
+          </div>
+          <form id="obj-nrohwt981" name="obj-nrohwt981" class="list form ajax-submit pb-2 form-ajax-submit bg-light inset" data-email="" data-email-title="" data-form-message="" data-form-error-message="" data-api-url="" data-api-method="POST" data-mode="2" data-api-root="" data-api-data-mode="0" data-form-postprocess="-1" data-form-function="">
+            <ul id="obj-mttodw746">
+              <li class="item-content item-input  " id="obj-jjfoyu472" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                <div class="item-media">
+                  <i id="obj-ofjfxt666" class="f7-icons" style="color:rgb(0,0,0);">f7_square_pencil
+                  </i>
+                </div>
+                <div id="obj-egiobx760" class="item-inner">
+                  <div id="obj-orupsl345" class="item-title item-label">
+                  </div>
+                  <div id="form_-uddvqu985" class="item-input-wrap">
+                    <input id="obj-nrohwt981-sn" class="no-store-data" name="sn" value="" type="text" required="" placeholder="Insert Here"> 
+                    </div> 
+                  </div> 
+                </li>
+              </ul>
+              <div id="obj-zwobnw803" class="block custom-block">
+                <button type="submit" class="col button button-round button-fill color-blue" id="submit_obj-nrohwt981">Connect
+                </button>
+              </div>
+            </form>
+            <div id="obj-ofhmmn078" class="block custom-block">
+              <p id="obj-btslfs920" class="lead text-danger">Register Your Device With Serial Number<br>
+              </p>
+            </div>
+            <form id="obj-dpvblq111" name="obj-dpvblq111" class="list form ajax-submit pb-2 form-ajax-submit bg-light inset" data-email="" data-email-title="" data-form-message="" data-form-error-message="" data-api-url="" data-api-method="POST" data-mode="2" data-api-root="" data-api-data-mode="0" data-form-postprocess="-1" data-form-function="">
+              <ul id="obj-nrdaxm345">
+                <li class="item-content item-input  " id="obj-brtawc511" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                  <div class="item-media">
+                    <i id="obj-htjkdm026" class="f7-icons" style="color:rgb(0,0,0);">f7_square_pencil
+                    </i>
+                  </div>
+                  <div id="obj-iwomrt995" class="item-inner">
+                    <div id="obj-qihqwv283" class="item-title item-label">
+                    </div>
+                    <div id="form_-xuzuax471" class="item-input-wrap">
+                      <input id="obj-dpvblq111-sn" class="no-store-data" name="sn" value="" type="text" required="" placeholder="Insert Here"> 
+                      </div> 
+                    </div> 
+                  </li>
+                </ul>
+                <div id="obj-wvlugq626" class="block custom-block">
+                  <button type="submit" class="col button button-round button-fill color-green" id="submit_obj-dpvblq111">Register
+                  </button>
+                  <ul>
+                    <div>
+                      <a id="obj-ldrvaq784" class="col button button-raised button-round button-fill">Remove
+                      </a> 
+                    </div>
+                  </ul> 
+                </div>
+              </form>
+            </div>    
+          </div>
+        </div>
+
+        <div id="panel-right" class="panel panel-right panel-init panel-cover" data-swipe="true">    
+          <div id="right-panel-page-o-544ccmg389ccmghncq" class="page">        
+            <div id="right-panel-page-content" class="page-content">
+            </div>    
+          </div>
+        </div>
+        <div id="view-main" class="view view-main view-init" data-url="/">
+          <div id="page" class="page" data-name="index">
+            <div id="navbar-o-509vxgx936vxgxzmqq" class="navbar">
+              <div id="navbg-navbar-o-509vxgx936vxgxzmqq" class="navbar-bg">
+              </div>
+              <div id="navbar-inner-o-761pgqq213pgqqtxku" class="navbar-inner ">
+                <div id="left-o-603kyoo625kyoojmic" class="left">
+                </div>
+                <div id="title-o-446fqnl146fqnlabgk" class="title">SmartPower
+                </div>
+                <div id="right-o-532wpbw828wpbwtkmb" class="right">
+                </div>
+              </div>
+            </div>
+            <div id="obj-dbnwav241" class="toolbar tabbar toolbar-bottom tabbar-labels" data-custom-color="false" data-scrollable="false">
+              <div id="obj-qdijkv208" class="toolbar-inner">
+                <a id="obj-crjkwi511" href="#tab-1" class="tab-link tab-link-active">
+                  <i id="obj-kuyami103" class="icon material-icons  ios-only">flash_on
+                  </i>
+                  <i id="obj-owxyna469" class="icon icon-fill material-icons  ios-only">flash_on
+                  </i>
+                  <i id="obj-cfwsgk730" class="icon material-icons md-only">flash_on
+                  </i>
+                  <span id="obj-kqzvrf767" class="tabbar-label">Stat
+                  </span>
+                </a>
+                <a id="obj-uavwba068" href="#tab-2" class="tab-link">
+                  <i id="obj-oxtwzl363" class="icon f7-icons ios-only">gear_alt
+                  </i>
+                  <i id="obj-cgsqsv624" class="icon icon-fill f7-icons ios-only">gear_alt
+                  </i>
+                  <i id="obj-mrerkj310" class="icon f7-icons md-only">gear_alt
+                  </i>
+                  <span id="obj-qddybz200" class="tabbar-label">Setting
+                  </span>
+                </a>
+                <a id="obj-cofwez144" href="#tab-3" class="tab-link">
+                  <i id="obj-vjhyqz445" class="icon f7-icons ios-only">checkmark_circle
+                  </i>
+                  <i id="obj-jtxtcq168" class="icon icon-fill f7-icons ios-only">checkmark_circle
+                  </i>
+                  <i id="obj-udcrhp141" class="icon f7-icons md-only">checkmark_circle
+                  </i>
+                  <span id="obj-aplxfy780" class="tabbar-label">Log
+                  </span>
+                </a>
+              </div>
+            </div>  
+            <div id="tabs-o-154gnow695gnowfzdx" class="tabs">
+              <div id="tab-1" class="page-content tab tab-active">
+                <div id="obj-vvokue810" class="block custom-block">
+                  <div id="obj-qrpyhv170" class="row">        
+                    <div id="obj-bfganq725" class="col"> 
+                      <div id="#backdrop-obj-kyovkr101" class="card-backdrop">
+                      </div>
+                      <div id="obj-kyovkr101" class="card card-expandable" data-backdrop-el="#backdrop-obj-kyovkr101">
+                        <div id="obj-wmpwxe404" class="card-content">
+                          <div id="obj-tsgekp698" class="card-expandable-container">
+                            <h1 id="obj-pmkyvs395" class="h1 text-center">Soket Satu
+                            </h1><img id="obj-ysldcg243" src="img/84132.png" alt="" title="." class="img w-100 img-fluid bg-transparent">
+                            <div id="obj-jffrld934" class="list inset bg-light">
+                              <ul id="obj-sjxjbz955">
+                                <li id="obj-zzasgx724">
+                                  <div id="obj-asqikz817" class="item-content">
+                                    <div id="obj-ylcdvw864" class="item-inner">
+                                      <div id="obj-yehvte109" class="item-title">Status
+                                      </div>
+                                      <div id="obj-wytqdc255" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-tsfloz202">
+                                  <div id="obj-rmrgyw259" class="item-content">
+                                    <div id="obj-qfnzpm945" class="item-inner">
+                                      <div id="obj-pzjsgc641" class="item-title">Timer
+                                      </div>
+                                      <div id="obj-ntunra698" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-lmgibx644">
+                                  <div id="obj-igsdmu691" class="item-content">
+                                    <div id="obj-gaeyws638" class="item-inner">
+                                      <div id="obj-euqthp685" class="item-title">KWh
+                                      </div>
+                                      <div id="obj-bosqku993" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-zinjck689">
+                                  <div id="obj-wcpgfo987" class="item-content">
+                                    <div id="obj-txrdjt395" class="item-inner">
+                                      <div id="obj-prtany693" class="item-title">W
+                                      </div>
+                                      <div id="obj-nlfvxv640" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-lfrqis697">
+                                  <div id="obj-jzclsq644" class="item-content">
+                                    <div id="obj-ftehwu942" class="item-inner">
+                                      <div id="obj-cngeaz240" class="item-title">V
+                                      </div>
+                                      <div id="obj-ahszkw397" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-wcuwob605">
+                                  <div id="obj-uvgrzy641" class="item-content">
+                                    <div id="obj-rqiocd959" class="item-inner">
+                                      <div id="obj-nkkkgh257" class="item-title">A
+                                      </div>
+                                      <div id="obj-kfmhkm555" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div id="obj-nyeqko493" class="card-content-padding">
+                          </div>
+                        </div>
+                      </div>
+                    </div>        
+                    <div id="obj-xlyiaa818" class="col"> 
+                      <div id="#backdrop-obj-qpista488" class="card-backdrop">
+                      </div>
+                      <div id="obj-qpista488" class="card card-expandable" data-backdrop-el="#backdrop-obj-qpista488">
+                        <div id="obj-nyfbus540" class="card-content">
+                          <div id="obj-ocafbg879" class="card-expandable-container">
+                            <h1 id="obj-jybbfk179" class="h1 text-center">Soket Dua
+                            </h1><img id="obj-csdepy937" src="img/84132.png" alt="" title="." class="img w-100 img-fluid bg-transparent">
+                            <div id="obj-tcoydd406" class="list inset bg-light">
+                              <ul id="obj-fukbxe939">
+                                <li id="obj-dzlirh871">
+                                  <div id="obj-uhfzxc630" class="item-content">
+                                    <div id="obj-rfcyiw268" class="item-inner">
+                                      <div id="obj-mljion702" class="item-title">Status
+                                      </div>
+                                      <div id="obj-mpelvc932" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-nsjnjj900">
+                                  <div id="obj-susjru916" class="item-content">
+                                    <div id="obj-svohdf810" class="item-inner">
+                                      <div id="obj-isiotc045" class="item-title">Timer
+                                      </div>
+                                      <div id="obj-aoxrwk567" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-ukfrne577">
+                                  <div id="obj-tdalet263" class="item-content">
+                                    <div id="obj-gcxttq994" class="item-inner">
+                                      <div id="obj-psuyla161" class="item-title">KWh
+                                      </div>
+                                      <div id="obj-zhxawn961" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-aciguh457">
+                                  <div id="obj-knuhmu033" class="item-content">
+                                    <div id="obj-umaubu572" class="item-inner">
+                                      <div id="obj-emxkkc273" class="item-title">W
+                                      </div>
+                                      <div id="obj-tycfqt512" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-omqxev967">
+                                  <div id="obj-zxmwdb292" class="item-content">
+                                    <div id="obj-kwcizu380" class="item-inner">
+                                      <div id="obj-uwzyhb181" class="item-title">V
+                                      </div>
+                                      <div id="obj-gkayup384" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li id="obj-rcmehx268">
+                                  <div id="obj-wpklyo068" class="item-content">
+                                    <div id="obj-wtfofd398" class="item-inner">
+                                      <div id="obj-vxrtgy979" class="item-title">A
+                                      </div>
+                                      <div id="obj-rrsqjd277" class="item-after">-
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div id="obj-lhblvj701" class="card-content-padding">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="page-content tab">
+                <div id="obj-soondi790" class="block custom-block">
+                  <h1 id="obj-wanira437" class="h1">Setting
+                  </h1>
+                  <div id="obj-lzkdwy273" class="row no-gap">
+                    <div id="obj-wnbfbt737" class="col-25 "><img id="obj-fqieth930" src="img/84132.png" alt="" class="img avatar rounded-circle img-thumbnail"  ="" title="Name">
+                    </div>
+                    <div id="obj-oufuog235" class="col-75 ">
+                      <div id="obj-xbktqt807" class="block-title">Hallo
+                      </div>
+                      <p id="obj-gfizrc736" class="lead">Insert Your Serial Number First!<br><br>
+                      </p>
+                    </div>
+                  </div>
+                  <div id="obj-bviaub619" class="row">
+                    <div id="obj-cnyqzc703" class="col-75 ">
+                      <div id="obj-mjygrg198" class="list">
+                        <ul id="obj-vsbdiy709">
+                          <li id="obj-qxinop243">
+                            <div id="obj-egihhz614" class="item-content">
+                              <div id="obj-vocymv363" class="item-media">
+                                <i id="obj-ouczuh935" class="material-icons">flash_on
+                                </i>
+                              </div>
+                              <div id="obj-dezdfe530" class="item-inner">
+                                <div id="obj-zkgnlw074" class="item-title">Soket Satu
+                                </div>
+                                <div id="obj-yossmr655" class="item-after">-
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li id="obj-bqrqnk921">
+                            <div id="obj-hsjlcn685" class="item-content">
+                              <div id="obj-ptmexk088" class="item-media">
+                                <i id="obj-ggxpau567" class="material-icons">flash_on
+                                </i>
+                              </div>
+                              <div id="obj-kszfbk967" class="item-inner">
+                                <div id="obj-dnxhll139" class="item-title">Soket Dua
+                                </div>
+                                <div id="obj-honvox026" class="item-after">-
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="obj-ytpymm996" class="col-25 ">
+                      <a id="obj-qmlykh879" class="col button button-raised button-fill">
+                        <i class="f7-icons">power
+                        </i>
+                      </a>
+                      <a id="obj-ieqypy189" class="col button button-raised button-fill">
+                        <i class="f7-icons">power
+                        </i>
+                      </a>
+                      <div id="obj-acgboo805" class="flexbox display-flex flex-column align-items-flex-start flex-nowrap">
+                      </div> 
+                    </div>
+                  </div>
+                  <div id="obj-aezjvh129" class="block-title block-title-medium">Notification
+                  </div>
+                  <div id="obj-itnbwa352" class="list">
+                    <ul id="obj-nzrbla697">
+                      <li id="obj-fgfoeg744">
+                        <div id="obj-vopgdj854" class="item-content">
+                          <div id="obj-jxobwt225" class="item-media">
+                            <i id="obj-afirco984" class="material-icons">notifications_active
+                            </i>
+                          </div>
+                          <div id="obj-snmgoc481" class="item-inner">
+                            <div id="obj-nstqvu926" class="item-title">Status
+                            </div>
+                            <div id="obj-nwotci155" class="item-after">-
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="obj-ppspji186" class="list accordion-list bg-color-lightblue inset">
+                    <ul id="li-rasivo849">
+                      <li class="accordion-item " id="li-omrzex442">
+                        <a class="item-link item-content" href="#" id="a-nqdeft923">
+                          <div class="item-inner" id="div-sdblwk823">
+                            <div class="item-title" id="div-sslane938">Change
+                            </div>
+                          </div>
+                        </a>
+                        <div class="accordion-item-content" id="div-fbbwzv651">
+                          <div class="block custom-block" id="div-ipghdb163">
+                            <form id="obj-frhmij881" name="obj-frhmij881" class="list form ajax-submit pb-2 form-ajax-submit inline-labels" data-email="" data-email-title="" data-form-message="" data-form-error-message="" data-api-url="" data-api-method="POST" data-mode="2" data-api-root="" data-api-data-mode="0" data-form-postprocess="-1" data-form-function="">
+                              <ul id="obj-odslgx636">
+                                <li class="item-content item-input  " id="obj-mvzoxp044" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                                  <div id="obj-huzmxy773" class="item-inner item-inner-switch">
+                                    <div id="obj-zbnzqf820" class="item-title item-label  item-label-switch">Status
+                                    </div>
+                                    <div id="form_-inpcbz757" class="item-input text-right ">
+                                      <span>
+                                      </span>
+                                      <label id="obj-nanjsq657" class="toggle toggle-init color-green">
+                                        <input id="obj-frhmij881-input-1" class="no-store-data" name="input-1" type="checkbox">
+                                          <span class="toggle-icon">
+                                          </span>
+                                        </label> 
+                                      </div> 
+                                    </div> 
+                                  </li>
+                                </ul>
+                                <div id="obj-sjmmpe122" class="block custom-block">
+                                  <button type="submit" class="col button button-raised button-round button-fill" id="submit_obj-frhmij881">Apply
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div> 
+                  <div id="obj-bjtuaz877" class="swiper-container swiper-container-horizontal swiper-container-autoheight swiper-init" data-swiper-delay="0" data-swiper-type="bullets" data-free-mode-momentum="false" data-free-mode-sticky="false" data-swiper-navigation="false" data-swiper-dynamicbullets="false" data-pagination="{&quot;el&quot;: &quot;.swiper-pagination&quot;,&quot;type&quot;:&quot;bullets&quot;  }" data-direction="horizontal" data-effect="slide" data-slides-per-view="1" data-initial-slide="0" data-space-between="10" data-loop="false" data-center="false" data-free-mode="false" data-mousewheel="false">
+                    <div id="obj-arzbij788" class="swiper-pagination swiper-pagination-bullets swiper-pagination-clickable">
+                      <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1">1
+                      </span>
+                      <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2">2
+                      </span>
+                    </div>      
+                    <div id="obj-euyzjc044" class="swiper-wrapper" style="height: 255px; transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                      <div id="obj-xneijj237" class="swiper-slide swiper-slide-visible swiper-slide-active">
+                        <div id="obj-krsoni759" class="block-title block-title-medium">Smart Soket 1
+                        </div>
+                        <div id="obj-uvsyln776" class="block custom-block">
+                          <div id="obj-rhaovp152" class="list">
+                            <ul id="obj-ksievk538">
+                              <li id="obj-eygqvj323">
+                                <div id="obj-wfjfix731" class="item-content">
+                                  <div id="obj-nndwos590" class="item-media">
+                                    <i id="obj-fvhlag998" class="f7-icons">timer_fill
+                                    </i>
+                                  </div>
+                                  <div id="obj-zbewaf893" class="item-inner">
+                                    <div id="obj-vhwfnq086" class="item-title">Status
+                                    </div>
+                                    <div id="obj-ulhjom567" class="item-after">-
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li id="obj-znqgwx572">
+                                <div id="obj-gosyrt985" class="item-content">
+                                  <div id="obj-qopozb776" class="item-media">
+                                    <i id="obj-zomdii476" class="f7-icons">stopwatch_fill
+                                    </i>
+                                  </div>
+                                  <div id="obj-lncpeb665" class="item-inner">
+                                    <div id="obj-bkwwty789" class="item-title">Nyala
+                                    </div>
+                                    <div id="obj-60346451" class="row">
+                                      <div id="obj-12046341" class="col-40 ">
+                                        <div id="obj-tgkaxg302" class="item-after">-
+                                        </div>
+                                      </div>
+                                      <div id="obj-12046342" class="col-20 ">
+                                        <div id="obj-tgkaxg3021" class="item-after">:
+                                        </div>
+                                      </div>
+                                      <div id="obj-12046343" class="col-40 ">
+                                        <div id="obj-tgkaxg3022" class="item-after">-
+                                        </div>
+                                      </div>  
+                                      </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li id="obj-obcyus061">
+                                <div id="obj-mvotep018" class="item-content">
+                                  <div id="obj-moulcy353" class="item-media">
+                                    <i id="obj-pguzns185" class="f7-icons">stopwatch_fill
+                                    </i>
+                                  </div>
+                                  <div id="obj-txnklx215" class="item-inner">
+                                    <div id="obj-cmkqeg472" class="item-title">Mati
+                                    </div>
+                                    <div id="obj-60346452" class="row">
+                                      <div id="obj-12046344" class="col-40 ">
+                                        <div id="obj-obhode679" class="item-after">-
+                                        </div>
+                                      </div>
+                                      <div id="obj-12046345" class="col-20 ">
+                                        <div id="obj-92002" class="item-after">:
+                                        </div>
+                                      </div>
+                                      <div id="obj-12046346" class="col-40 ">
+                                        <div id="obj-obhode6791" class="item-after">-
+                                        </div>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="obj-siwhhv886" class="swiper-slide swiper-slide-next">
+                        <div id="obj-oryyeb443" class="block custom-block">
+                          <div id="obj-bibqjq332" class="block-title block-title-medium">Set Timer
+                          </div>
+                          <form id="obj-bzqpju090" name="obj-bzqpju090" class="list form ajax-submit pb-2 form-ajax-submit inset inline-labels bg-color-lightblue text-white" data-email="" data-email-title="" data-form-message="" data-form-error-message="" data-api-url="" data-api-method="POST" data-mode="2" data-api-root="" data-api-data-mode="0" data-form-postprocess="-1" data-form-function="">
+                            <ul id="obj-romwuh956">
+                              <li class="item-content item-input  " id="obj-usxuim071" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                                <div id="obj-evyxci635" class="item-inner item-inner-switch">
+                                  <div id="obj-kxrsqm389" class="item-title item-label  item-label-switch">Status
+                                  </div>
+                                  <div id="form_-gcybxe833" class="item-input text-right ">
+                                    <span>
+                                    </span>
+                                    <label id="obj-lpwjou723" class="toggle toggle-init color-green">
+                                      <input id="obj-bzqpju090-soketsta1" class="no-store-data" name="soketsta1" type="checkbox">
+                                        <span class="toggle-icon">
+                                        </span>
+                                      </label> 
+                                    </div> 
+                                  </div> 
+                                </li>
+                                <li class="item-content item-input  " id="obj-rnupyc273" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                                  <div id="obj-hzjuit146" class="item-inner">
+                                    <div id="obj-mmhcak046" class="item-title item-label">Nyala
+                                    </div>
+                                    <div id="form_-qzwmki298" class="item-input-wrap input-dropdown-wrap">
+                                      <div id="obj-60346441" class="row">
+                                        <div id="obj-12046331" class="col-40 ">
+                                          <select id="obj-ltogwj975-nyalah1" class="no-store-data" name="nyala">
+                                            <option value="" disabled="">...
+                                            </option>
+                                            <option value="0">0
+                                            </option>
+                                            <option value="1">1
+                                            </option>
+                                            <option value="2">2
+                                            </option>
+                                            <option value="3">3
+                                            </option>
+                                            <option value="4">4
+                                            </option>
+                                            <option value="5">5
+                                            </option>
+                                            <option value="6">6
+                                            </option>
+                                            <option value="7">7
+                                            </option>
+                                            <option value="8">8
+                                            </option>
+                                            <option value="9">9
+                                            </option>
+                                            <option value="10">10
+                                            </option>
+                                            <option value="11">11
+                                            </option>
+                                            <option value="12">12
+                                            </option>
+                                            <option value="13">13
+                                            </option>
+                                            <option value="14">14
+                                            </option>
+                                            <option value="15">15
+                                            </option>
+                                            <option value="16">16
+                                            </option>
+                                            <option value="17">17
+                                            </option>
+                                            <option value="18">18
+                                            </option>
+                                            <option value="19">19
+                                            </option>
+                                            <option value="20">20
+                                            </option>
+                                            <option value="21">21
+                                            </option>
+                                            <option value="22">22
+                                            </option>
+                                            <option value="23">23
+                                            </option>
+                                          </select> 
+                                        </div>
+                                        <div id="obj-12046345" class="col-20 ">
+                                          <div id="obj-92002" class="item-after">:
+                                          </div>
+                                        </div>
+                                        <div id="obj-12046332" class="col-40 ">
+                                          <select id="obj-ltogwj975-nyalam1" class="no-store-data" name="nyala">
+                                            <option value="" disabled="">...
+                                            </option>
+                                            <option value="0">0
+                                            </option>
+                                            <option value="1">1
+                                            </option>
+                                            <option value="2">2
+                                            </option>
+                                            <option value="3">3
+                                            </option>
+                                            <option value="4">4
+                                            </option>
+                                            <option value="5">5
+                                            </option>
+                                            <option value="6">6
+                                            </option>
+                                            <option value="7">7
+                                            </option>
+                                            <option value="8">8
+                                            </option>
+                                            <option value="9">9
+                                            </option>
+                                            <option value="10">10
+                                            </option>
+                                            <option value="11">11
+                                            </option>
+                                            <option value="12">12
+                                            </option>
+                                            <option value="13">13
+                                            </option>
+                                            <option value="14">14
+                                            </option>
+                                            <option value="15">15
+                                            </option>
+                                            <option value="16">16
+                                            </option>
+                                            <option value="17">17
+                                            </option>
+                                            <option value="18">18
+                                            </option>
+                                            <option value="19">19
+                                            </option>
+                                            <option value="20">20
+                                            </option>
+                                            <option value="21">21
+                                            </option>
+                                            <option value="22">22
+                                            </option>
+                                            <option value="23">23
+                                            </option>
+                                            <option value="24">24
+                                            </option>
+                                            <option value="25">25
+                                            </option>
+                                            <option value="26">26
+                                            </option>
+                                            <option value="27">27
+                                            </option>
+                                            <option value="28">28
+                                            </option>
+                                            <option value="29">29
+                                            </option>
+                                            <option value="30">30
+                                            </option>
+                                            <option value="31">31
+                                            </option>
+                                            <option value="32">32
+                                            </option>
+                                            <option value="33">33
+                                            </option>
+                                            <option value="34">34
+                                            </option>
+                                            <option value="35">35
+                                            </option>
+                                            <option value="36">36
+                                            </option>
+                                            <option value="37">37
+                                            </option>
+                                            <option value="38">38
+                                            </option>
+                                            <option value="39">39
+                                            </option>
+                                            <option value="40">40
+                                            </option>
+                                            <option value="41">41
+                                            </option>
+                                            <option value="42">42
+                                            </option>
+                                            <option value="43">43
+                                            </option>
+                                            <option value="44">44
+                                            </option>
+                                            <option value="45">45
+                                            </option>
+                                            <option value="46">46
+                                            </option>
+                                            <option value="47">47
+                                            </option>
+                                            <option value="48">48
+                                            </option>
+                                            <option value="49">49
+                                            </option>
+                                            <option value="50">50
+                                            </option>
+                                            <option value="51">51
+                                            </option>
+                                            <option value="52">52
+                                            </option>
+                                            <option value="53">53
+                                            </option>
+                                            <option value="54">54
+                                            </option>
+                                            <option value="55">55
+                                            </option>
+                                            <option value="56">56
+                                            </option>
+                                            <option value="57">57
+                                            </option>
+                                            <option value="58">58
+                                            </option>
+                                            <option value="59">59
+                                            </option>
+                                            
+                                          </select> 
+                                        </div>
+                                      </div> 
+                                    </div> 
+                                  </li>
+                                  <li class="item-content item-input  " id="obj-yloerd501" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                                    <div id="obj-jkecld674" class="item-inner">
+                                      <div id="obj-pwmijn213" class="item-title item-label">Mati
+                                      </div>
+                                      <div id="form_-skbrtl375" class="item-input-wrap input-dropdown-wrap">
+                                        <div id="obj-60346441" class="row">
+                                          <div id="obj-12046331" class="col-40 ">
+                                            <select id="obj-ltogwj975-matih1" class="no-store-data" name="mati">
+                                              <option value="" disabled="">...
+                                              </option>
+                                              <option value="0">0
+                                              </option>
+                                              <option value="1">1
+                                              </option>
+                                              <option value="2">2
+                                              </option>
+                                              <option value="3">3
+                                              </option>
+                                              <option value="4">4
+                                              </option>
+                                              <option value="5">5
+                                              </option>
+                                              <option value="6">6
+                                              </option>
+                                              <option value="7">7
+                                              </option>
+                                              <option value="8">8
+                                              </option>
+                                              <option value="9">9
+                                              </option>
+                                              <option value="10">10
+                                              </option>
+                                              <option value="11">11
+                                              </option>
+                                              <option value="12">12
+                                              </option>
+                                              <option value="13">13
+                                              </option>
+                                              <option value="14">14
+                                              </option>
+                                              <option value="15">15
+                                              </option>
+                                              <option value="16">16
+                                              </option>
+                                              <option value="17">17
+                                              </option>
+                                              <option value="18">18
+                                              </option>
+                                              <option value="19">19
+                                              </option>
+                                              <option value="20">20
+                                              </option>
+                                              <option value="21">21
+                                              </option>
+                                              <option value="22">22
+                                              </option>
+                                              <option value="23">23
+                                              </option>
+                                            </select> 
+                                          </div>
+                                          <div id="obj-12046345" class="col-20 ">
+                                            <div id="obj-92002" class="item-after">:
+                                            </div>
+                                          </div>
+                                          <div id="obj-12046332" class="col-40 ">
+                                            <select id="obj-ltogwj975-matim1" class="no-store-data" name="mati">
+                                              <option value="" disabled="">...
+                                              </option>
+                                              <option value="0">0
+                                              </option>
+                                              <option value="1">1
+                                              </option>
+                                              <option value="2">2
+                                              </option>
+                                              <option value="3">3
+                                              </option>
+                                              <option value="4">4
+                                              </option>
+                                              <option value="5">5
+                                              </option>
+                                              <option value="6">6
+                                              </option>
+                                              <option value="7">7
+                                              </option>
+                                              <option value="8">8
+                                              </option>
+                                              <option value="9">9
+                                              </option>
+                                              <option value="10">10
+                                              </option>
+                                              <option value="11">11
+                                              </option>
+                                              <option value="12">12
+                                              </option>
+                                              <option value="13">13
+                                              </option>
+                                              <option value="14">14
+                                              </option>
+                                              <option value="15">15
+                                              </option>
+                                              <option value="16">16
+                                              </option>
+                                              <option value="17">17
+                                              </option>
+                                              <option value="18">18
+                                              </option>
+                                              <option value="19">19
+                                              </option>
+                                              <option value="20">20
+                                              </option>
+                                              <option value="21">21
+                                              </option>
+                                              <option value="22">22
+                                              </option>
+                                              <option value="23">23
+                                              </option>
+                                              <option value="24">24
+                                              </option>
+                                              <option value="25">25
+                                              </option>
+                                              <option value="26">26
+                                              </option>
+                                              <option value="27">27
+                                              </option>
+                                              <option value="28">28
+                                              </option>
+                                              <option value="29">29
+                                              </option>
+                                              <option value="30">30
+                                              </option>
+                                              <option value="31">31
+                                              </option>
+                                              <option value="32">32
+                                              </option>
+                                              <option value="33">33
+                                              </option>
+                                              <option value="34">34
+                                              </option>
+                                              <option value="35">35
+                                              </option>
+                                              <option value="36">36
+                                              </option>
+                                              <option value="37">37
+                                              </option>
+                                              <option value="38">38
+                                              </option>
+                                              <option value="39">39
+                                              </option>
+                                              <option value="40">40
+                                              </option>
+                                              <option value="41">41
+                                              </option>
+                                              <option value="42">42
+                                              </option>
+                                              <option value="43">43
+                                              </option>
+                                              <option value="44">44
+                                              </option>
+                                              <option value="45">45
+                                              </option>
+                                              <option value="46">46
+                                              </option>
+                                              <option value="47">47
+                                              </option>
+                                              <option value="48">48
+                                              </option>
+                                              <option value="49">49
+                                              </option>
+                                              <option value="50">50
+                                              </option>
+                                              <option value="51">51
+                                              </option>
+                                              <option value="52">52
+                                              </option>
+                                              <option value="53">53
+                                              </option>
+                                              <option value="54">54
+                                              </option>
+                                              <option value="55">55
+                                              </option>
+                                              <option value="56">56
+                                              </option>
+                                              <option value="57">57
+                                              </option>
+                                              <option value="58">58
+                                              </option>
+                                              <option value="59">59
+                                              </option>
+                                              
+                                            </select> 
+                                          </div>
+                                        </div> 
+                                        </div> 
+                                      </div> 
+                                    </li>
+                                  </ul>
+                                  <div id="obj-bsepjd976" class="block custom-block">
+                                    <button type="submit" class="col button button-round button-fill color-green" id="submit_obj-bzqpju090">Apply
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div id="obj-erevvp669" class="swiper-container swiper-container-horizontal swiper-container-autoheight swiper-init" data-swiper-delay="0" data-swiper-type="bullets" data-free-mode-momentum="false" data-free-mode-sticky="false" data-swiper-navigation="false" data-swiper-dynamicbullets="false" data-pagination="{&quot;el&quot;: &quot;.swiper-pagination&quot;,&quot;type&quot;:&quot;bullets&quot;  }" data-direction="horizontal" data-effect="slide" data-slides-per-view="1" data-initial-slide="0" data-space-between="10" data-loop="false" data-center="false" data-free-mode="false" data-mousewheel="false">
+                          <div id="obj-paimqx607" class="swiper-pagination swiper-pagination-bullets swiper-pagination-clickable">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1">1
+                            </span>
+                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2">2
+                            </span>
+                          </div>      
+                          <div id="obj-whofkl489" class="swiper-wrapper" style="height: 255px;">
+                            <div id="obj-gvywqo822" class="swiper-slide swiper-slide-visible swiper-slide-active">
+                              <div id="obj-wrigce972" class="block-title block-title-medium">Smart Soket 2
+                              </div>
+                              <div id="obj-ewmyxt157" class="block custom-block">
+                                <div id="obj-lcwtfw935" class="list">
+                                  <ul id="obj-qjwqgh174">
+                                    <li id="obj-xpgmok952">
+                                      <div id="obj-bwwljc442" class="item-content">
+                                        <div id="obj-fdmjdv932" class="item-media">
+                                          <i id="obj-ikskru673" class="f7-icons">timer_fill
+                                          </i>
+                                        </div>
+                                        <div id="obj-iteosi127" class="item-inner">
+                                          <div id="obj-ozeltt266" class="item-title">Status
+                                          </div>
+                                          <div id="obj-vfyfhp782" class="item-after">-
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li id="obj-zmodch272">
+                                      <div id="obj-gsyzkl150" class="item-content">
+                                        <div id="obj-kzoyed540" class="item-media">
+                                          <i id="obj-pfovgo789" class="f7-icons">stopwatch_fill
+                                          </i>
+                                        </div>
+                                        <div id="obj-tmetag179" class="item-inner">
+                                          <div id="obj-bsynpc796" class="item-title">Nyala
+                                          </div>
+                                          <div id="obj-60346451" class="row">
+                                            <div id="obj-12046341" class="col-40 ">
+                                              <div id="obj-hyijxg584" class="item-after">-
+                                              </div>
+                                            </div>
+                                            <div id="obj-12046342" class="col-20 ">
+                                              <div id="obj-tgkaxg3021" class="item-after">:
+                                              </div>
+                                            </div>
+                                            <div id="obj-12046343" class="col-40 ">
+                                              <div id="obj-hyijxg5841" class="item-after">-
+                                              </div>
+                                            </div>  
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li id="obj-qdmbsu759">
+                                      <div id="obj-xjwway637" class="item-content">
+                                        <div id="obj-bqmvuq027" class="item-media">
+                                          <i id="obj-eysviq868" class="f7-icons">stopwatch_fill
+                                          </i>
+                                        </div>
+                                        <div id="obj-hfywwp610" class="item-inner">
+                                          <div id="obj-lmouqh100" class="item-title">Mati
+                                          </div>
+                                          <div id="obj-60346451" class="row">
+                                            <div id="obj-12046341" class="col-40 ">
+                                              <div id="obj-ptetlz590" class="item-after">-
+                                              </div>
+                                            </div>
+                                            <div id="obj-12046342" class="col-20 ">
+                                              <div id="obj-tgkaxg3021" class="item-after">:
+                                              </div>
+                                            </div>
+                                            <div id="obj-12046343" class="col-40 ">
+                                              <div id="obj-ptetlz5901" class="item-after">-
+                                              </div>
+                                            </div>  
+                                            </div>
+  
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="obj-mlbfwm691" class="swiper-slide swiper-slide-next">
+                              <div id="obj-cfykbg256" class="block custom-block">
+                                <div id="obj-gmojvz746" class="block-title block-title-medium">Set Timer
+                                </div>
+                                <form id="obj-ltogwj975" name="obj-ltogwj975" class="list form ajax-submit pb-2 form-ajax-submit inset inline-labels bg-color-lightblue text-white" data-email="" data-email-title="" data-form-message="" data-form-error-message="" data-api-url="" data-api-method="POST" data-mode="2" data-api-root="" data-api-data-mode="0" data-form-postprocess="-1" data-form-function="">
+                                  <ul id="obj-qzodyu014">
+                                    <li class="item-content item-input  " id="obj-wgoazf243" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                                      <div id="obj-bmoxaq381" class="item-inner item-inner-switch">
+                                        <div id="obj-gtoubb520" class="item-title item-label  item-label-switch">Status
+                                        </div>
+                                        <div id="obj-kaetwt901" class="item-input text-right ">
+                                          <span>
+                                          </span>
+                                          <label id="obj-yolqbk857" class="toggle toggle-init color-green">
+                                            <input id="obj-ltogwj975-soketsta1" class="no-store-data" name="soketsta1" type="checkbox">
+                                              <span class="toggle-icon">
+                                              </span>
+                                            </label> 
+                                          </div> 
+                                        </div> 
+                                      </li>
+                                      <li class="item-content item-input  " id="obj-laehrr512" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                                        <div id="obj-oikhfq253" class="item-inner">
+                                          <div id="obj-uoucnu141" class="item-title item-label">Nyala
+                                          </div>
+                                          <div id="obj-bueyux929" class="item-input-wrap input-dropdown-wrap">
+                                            <div id="obj-60346441" class="row">
+                                              <div id="obj-12046331" class="col-40 ">
+                                                <select id="obj-ltogwj975-nyalah2" class="no-store-data" name="nyala">
+                                                  <option value="" disabled="">...
+                                                  </option>
+                                                  <option value="0">0
+                                                  </option>
+                                                  <option value="1">1
+                                                  </option>
+                                                  <option value="2">2
+                                                  </option>
+                                                  <option value="3">3
+                                                  </option>
+                                                  <option value="4">4
+                                                  </option>
+                                                  <option value="5">5
+                                                  </option>
+                                                  <option value="6">6
+                                                  </option>
+                                                  <option value="7">7
+                                                  </option>
+                                                  <option value="8">8
+                                                  </option>
+                                                  <option value="9">9
+                                                  </option>
+                                                  <option value="10">10
+                                                  </option>
+                                                  <option value="11">11
+                                                  </option>
+                                                  <option value="12">12
+                                                  </option>
+                                                  <option value="13">13
+                                                  </option>
+                                                  <option value="14">14
+                                                  </option>
+                                                  <option value="15">15
+                                                  </option>
+                                                  <option value="16">16
+                                                  </option>
+                                                  <option value="17">17
+                                                  </option>
+                                                  <option value="18">18
+                                                  </option>
+                                                  <option value="19">19
+                                                  </option>
+                                                  <option value="20">20
+                                                  </option>
+                                                  <option value="21">21
+                                                  </option>
+                                                  <option value="22">22
+                                                  </option>
+                                                  <option value="23">23
+                                                  </option>
+  
+                                                </select> 
+                                              </div>
+                                              <div id="obj-12046345" class="col-20 ">
+                                                <div id="obj-92002" class="item-after">:
+                                                </div>
+                                              </div>
+                                              <div id="obj-12046332" class="col-40 ">
+                                                <select id="obj-ltogwj975-nyalam2" class="no-store-data" name="nyala">
+                                                  <option value="" disabled="">...
+                                                  </option>
+                                                  <option value="0">0
+                                                  </option>
+                                                  <option value="1">1
+                                                  </option>
+                                                  <option value="2">2
+                                                  </option>
+                                                  <option value="3">3
+                                                  </option>
+                                                  <option value="4">4
+                                                  </option>
+                                                  <option value="5">5
+                                                  </option>
+                                                  <option value="6">6
+                                                  </option>
+                                                  <option value="7">7
+                                                  </option>
+                                                  <option value="8">8
+                                                  </option>
+                                                  <option value="9">9
+                                                  </option>
+                                                  <option value="10">10
+                                                  </option>
+                                                  <option value="11">11
+                                                  </option>
+                                                  <option value="12">12
+                                                  </option>
+                                                  <option value="13">13
+                                                  </option>
+                                                  <option value="14">14
+                                                  </option>
+                                                  <option value="15">15
+                                                  </option>
+                                                  <option value="16">16
+                                                  </option>
+                                                  <option value="17">17
+                                                  </option>
+                                                  <option value="18">18
+                                                  </option>
+                                                  <option value="19">19
+                                                  </option>
+                                                  <option value="20">20
+                                                  </option>
+                                                  <option value="21">21
+                                                  </option>
+                                                  <option value="22">22
+                                                  </option>
+                                                  <option value="23">23
+                                                  </option>
+                                                  <option value="24">24
+                                                  </option>
+                                                  <option value="25">25
+                                                  </option>
+                                                  <option value="26">26
+                                                  </option>
+                                                  <option value="27">27
+                                                  </option>
+                                                  <option value="28">28
+                                                  </option>
+                                                  <option value="29">29
+                                                  </option>
+                                                  <option value="30">30
+                                                  </option>
+                                                  <option value="31">31
+                                                  </option>
+                                                  <option value="32">32
+                                                  </option>
+                                                  <option value="33">33
+                                                  </option>
+                                                  <option value="34">34
+                                                  </option>
+                                                  <option value="35">35
+                                                  </option>
+                                                  <option value="36">36
+                                                  </option>
+                                                  <option value="37">37
+                                                  </option>
+                                                  <option value="38">38
+                                                  </option>
+                                                  <option value="39">39
+                                                  </option>
+                                                  <option value="40">40
+                                                  </option>
+                                                  <option value="41">41
+                                                  </option>
+                                                  <option value="42">42
+                                                  </option>
+                                                  <option value="43">43
+                                                  </option>
+                                                  <option value="44">44
+                                                  </option>
+                                                  <option value="45">45
+                                                  </option>
+                                                  <option value="46">46
+                                                  </option>
+                                                  <option value="47">47
+                                                  </option>
+                                                  <option value="48">48
+                                                  </option>
+                                                  <option value="49">49
+                                                  </option>
+                                                  <option value="50">50
+                                                  </option>
+                                                  <option value="51">51
+                                                  </option>
+                                                  <option value="52">52
+                                                  </option>
+                                                  <option value="53">53
+                                                  </option>
+                                                  <option value="54">54
+                                                  </option>
+                                                  <option value="55">55
+                                                  </option>
+                                                  <option value="56">56
+                                                  </option>
+                                                  <option value="57">57
+                                                  </option>
+                                                  <option value="58">58
+                                                  </option>
+                                                  <option value="59">59
+                                                  </option>
+                                                  
+                                                </select> 
+                                              </div>
+                                            </div> 
+                                            
+                                            </div> 
+                                          </div> 
+                                        </li>
+                                        <li class="item-content item-input  " id="obj-rprvoo616" data-state="" data-errormessage="" data-pattern="" data-autofill="false">
+                                          <div id="obj-vwhuig097" class="item-inner">
+                                            <div id="obj-dcbnxc623" class="item-title item-label">Mati
+                                            </div>
+                                            <div id="obj-jiljfg401" class="item-input-wrap input-dropdown-wrap">
+                                              <div id="obj-60346441" class="row">
+                                                <div id="obj-12046331" class="col-40 ">
+                                                  <select id="obj-ltogwj975-matih2" class="no-store-data" name="mati">
+                                                    <option value="" disabled="">...
+                                                    </option>
+                                                    <option value="0">0
+                                                    </option>
+                                                    <option value="1">1
+                                                    </option>
+                                                    <option value="2">2
+                                                    </option>
+                                                    <option value="3">3
+                                                    </option>
+                                                    <option value="4">4
+                                                    </option>
+                                                    <option value="5">5
+                                                    </option>
+                                                    <option value="6">6
+                                                    </option>
+                                                    <option value="7">7
+                                                    </option>
+                                                    <option value="8">8
+                                                    </option>
+                                                    <option value="9">9
+                                                    </option>
+                                                    <option value="10">10
+                                                    </option>
+                                                    <option value="11">11
+                                                    </option>
+                                                    <option value="12">12
+                                                    </option>
+                                                    <option value="13">13
+                                                    </option>
+                                                    <option value="14">14
+                                                    </option>
+                                                    <option value="15">15
+                                                    </option>
+                                                    <option value="16">16
+                                                    </option>
+                                                    <option value="17">17
+                                                    </option>
+                                                    <option value="18">18
+                                                    </option>
+                                                    <option value="19">19
+                                                    </option>
+                                                    <option value="20">20
+                                                    </option>
+                                                    <option value="21">21
+                                                    </option>
+                                                    <option value="22">22
+                                                    </option>
+                                                    <option value="23">23
+                                                    </option>
+    
+                                                  </select> 
+                                                </div>
+                                                <div id="obj-12046345" class="col-20 ">
+                                                  <div id="obj-92002" class="item-after">:
+                                                  </div>
+                                                </div>
+                                                <div id="obj-12046332" class="col-40 ">
+                                                  <select id="obj-ltogwj975-matim2" class="no-store-data" name="mati">
+                                                    <option value="" disabled="">...
+                                                    </option>
+                                                    <option value="0">0
+                                                    </option>
+                                                    <option value="1">1
+                                                    </option>
+                                                    <option value="2">2
+                                                    </option>
+                                                    <option value="3">3
+                                                    </option>
+                                                    <option value="4">4
+                                                    </option>
+                                                    <option value="5">5
+                                                    </option>
+                                                    <option value="6">6
+                                                    </option>
+                                                    <option value="7">7
+                                                    </option>
+                                                    <option value="8">8
+                                                    </option>
+                                                    <option value="9">9
+                                                    </option>
+                                                    <option value="10">10
+                                                    </option>
+                                                    <option value="11">11
+                                                    </option>
+                                                    <option value="12">12
+                                                    </option>
+                                                    <option value="13">13
+                                                    </option>
+                                                    <option value="14">14
+                                                    </option>
+                                                    <option value="15">15
+                                                    </option>
+                                                    <option value="16">16
+                                                    </option>
+                                                    <option value="17">17
+                                                    </option>
+                                                    <option value="18">18
+                                                    </option>
+                                                    <option value="19">19
+                                                    </option>
+                                                    <option value="20">20
+                                                    </option>
+                                                    <option value="21">21
+                                                    </option>
+                                                    <option value="22">22
+                                                    </option>
+                                                    <option value="23">23
+                                                    </option>
+                                                    <option value="24">24
+                                                    </option>
+                                                    <option value="25">25
+                                                    </option>
+                                                    <option value="26">26
+                                                    </option>
+                                                    <option value="27">27
+                                                    </option>
+                                                    <option value="28">28
+                                                    </option>
+                                                    <option value="29">29
+                                                    </option>
+                                                    <option value="30">30
+                                                    </option>
+                                                    <option value="31">31
+                                                    </option>
+                                                    <option value="32">32
+                                                    </option>
+                                                    <option value="33">33
+                                                    </option>
+                                                    <option value="34">34
+                                                    </option>
+                                                    <option value="35">35
+                                                    </option>
+                                                    <option value="36">36
+                                                    </option>
+                                                    <option value="37">37
+                                                    </option>
+                                                    <option value="38">38
+                                                    </option>
+                                                    <option value="39">39
+                                                    </option>
+                                                    <option value="40">40
+                                                    </option>
+                                                    <option value="41">41
+                                                    </option>
+                                                    <option value="42">42
+                                                    </option>
+                                                    <option value="43">43
+                                                    </option>
+                                                    <option value="44">44
+                                                    </option>
+                                                    <option value="45">45
+                                                    </option>
+                                                    <option value="46">46
+                                                    </option>
+                                                    <option value="47">47
+                                                    </option>
+                                                    <option value="48">48
+                                                    </option>
+                                                    <option value="49">49
+                                                    </option>
+                                                    <option value="50">50
+                                                    </option>
+                                                    <option value="51">51
+                                                    </option>
+                                                    <option value="52">52
+                                                    </option>
+                                                    <option value="53">53
+                                                    </option>
+                                                    <option value="54">54
+                                                    </option>
+                                                    <option value="55">55
+                                                    </option>
+                                                    <option value="56">56
+                                                    </option>
+                                                    <option value="57">57
+                                                    </option>
+                                                    <option value="58">58
+                                                    </option>
+                                                    <option value="59">59
+                                                    </option>
+                                                    
+                                                  </select> 
+                                                </div>
+                                              </div> 
+                                             
+                                              </div> 
+                                            </div> 
+                                          </li>
+                                        </ul>
+                                        <div id="obj-aeygyw098" class="block custom-block">
+                                          <button type="submit" class="col button button-round button-fill color-green" id="submit_obj-ltogwj975">Apply
+                                          </button>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>    
+                              </div>
+                              <div id="obj-yibeuh954" class="fab fab-right-top" data-icon-close="f7_plus" data-icon-open="f7_multiply">
+                                <a id="obj-cpdrxo526" href="#" class="fab-icon">
+                                  <i id="obj-esiskv494" class="f7-icons">f7_plus
+                                  </i>
+                                  <i id="obj-gvxsfu012" class="f7-icons">f7_multiply
+                                  </i>
+                                </a>
+                                <div id="obj-vsjnbr361" class="fab-buttons fab-buttons-left">
+                                  <a id="obj-sunebn200" class="panel-open" href="#" data-panel="left"> 
+                                    <i id="obj-agphmi137" class="f7-icons">device_laptop
+                                    </i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          <div id="tab-3" class="page-content tab">
+                            <div id="obj-lwgiuv038" class="fab fab-right-bottom" data-icon-close="f7_ellipsis" data-icon-open="f7_multiply">
+                              <a id="obj-tsjyfo730" href="#" class="fab-icon">
+                                <i id="obj-qxlezr662" class="f7-icons">f7_ellipsis
+                                </i>
+                                <i id="obj-zjnhkm509" class="f7-icons">f7_multiply
+                                </i>
+                              </a>
+                              <div id="obj-dxmnrd784" class="fab-buttons fab-buttons-left">
+                                <a id="obj-bmchfm126"> 
+                                  <i id="obj-gzaowd017" class="f7-icons">trash_fill
+                                  </i>
+                                </a>
+                              </div>
+                            </div>
+                            
+                              <div id="obj-bauvkh793" class="block custom-block">
+                                <div id="obj-zobdyj817" class="row">        
+                                  <div id="obj-vjtbwv476" class="col">
+                                    <h2 id="obj-okrbab293" class="h2">History<br>
+                                    </h2>
+                                    <h4 id="userList"></h4>
+                                  </div>        
+                                  <div id="obj-pqrnvu262" class="col">
+                                    <h2 id="obj-jtclhb517" class="h2">Details<br>
+                                    </h2>
+                                    <div id="userDetail">
+                                      <!-- <p >Name :<strong class="detailName"></strong></p> -->
+                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            
+                          </div>
+                          <div id="tab-4" class="page-content tab">
+                          </div>
+                          <div id="tab-5" class="page-content tab">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+  <script type="text/javascript" src="js/service-worker-register.js"></script>
+  <script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
